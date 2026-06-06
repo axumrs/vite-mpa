@@ -17,6 +17,7 @@
     "@tailwindcss/vite": "^4.3.0",
     "basecoat-css": "^0.3.11",
     "htmx.org": "^2.0.10",
+    "lucide": "^1.17.0",
     "tailwindcss": "^4.3.0"
   }
 }

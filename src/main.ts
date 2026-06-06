@@ -20,3 +20,4 @@ htmx.default.config.includeIndicatorStyles = false;
 console.log("HTMX 与 Vite 启动成功！");
 
 import "basecoat-css/all";
+import "./icons";

@@ -90,3 +90,40 @@ htmx.default.config.includeIndicatorStyles = false;
 // 你的其他 TypeScript 业务逻辑...
 console.log("HTMX 与 Vite 启动成功！");
 ```
+
+## basecoat ui
+
+```bash
+pnpm add basecoat-css
+```
+
+修改 `src/style.css`：
+
+```css
+@import "tailwindcss";
+@import "basecoat-css";
+```
+
+## 图标
+
+```bash
+pnpm add lucide
+```
+
+导出需要的图标：
+
+```ts
+import { createIcons, Loader2 as Loading } from "lucide";
+
+createIcons({
+    icons: {
+        Loading
+    },
+});
+```
+
+在 HTML 中使用：
+
+```html
+<i data-lucide="loading" class="animate-spin"></i>
+```
