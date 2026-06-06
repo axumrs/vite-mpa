@@ -127,3 +127,47 @@ createIcons({
 ```html
 <i data-lucide="loading" class="animate-spin"></i>
 ```
+
+## alpine.js
+
+```bash
+pnpm add alpinejs && \
+pnpm add -D @types/alpinejs
+```
+
+全局：
+
+```ts
+import Alpine from "alpinejs";
+declare global {
+  interface Window {
+    // ...
+    Alpine: typeof Alpine;
+  }
+}
+window.Alpine = Alpine;
+Alpine.start();
+```
+
+使用：
+
+```html
+<button
+    class="btn-outline"
+    x-data="{
+    loading:false,
+    get isLoading() { return this.loading },
+    demoAction() {
+      this.loading = true;
+      setTimeout(() => {
+        this.loading = false;
+      }, 1000);
+    }
+  }"
+    @click="demoAction()"
+    :disabled="isLoading"
+  >
+    <i data-lucide="loading" class="animate-spin" x-show="isLoading"></i>
+    获取数据
+  </button>
+```
