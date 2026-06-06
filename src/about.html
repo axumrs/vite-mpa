@@ -1,3 +1,45 @@
 <%- include('components/Header.html') %>
 <div>ABOUT</div>
+
+<div class="flex flex-col items-center gap-2">
+  <div class="flex w-full flex-wrap gap-2">
+    <span class="badge">Badge</span>
+    <span class="badge-secondary">Secondary</span>
+    <span class="badge-destructive">Destructive</span>
+    <span class="badge-outline">Outline</span>
+  </div>
+  <div class="flex w-full flex-wrap gap-2">
+    <span class="badge-secondary bg-blue-500 text-white dark:bg-blue-600">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path
+          d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"
+        />
+        <path d="m9 12 2 2 4-4" />
+      </svg>
+      Verified
+    </span>
+    <span class="badge rounded-full h-5 min-w-5 px-1 font-mono tabular-nums"
+      >8</span
+    >
+    <span
+      class="badge-destructive rounded-full h-5 min-w-5 px-1 font-mono tabular-nums"
+      >99</span
+    >
+    <span
+      class="badge-outline rounded-full h-5 min-w-5 px-1 font-mono tabular-nums"
+      >20+</span
+    >
+  </div>
+</div>
+
 <%- include('components/Footer.html') %>

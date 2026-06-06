@@ -18,3 +18,5 @@ htmx.default.config.includeIndicatorStyles = false;
 
 // 你的其他 TypeScript 业务逻辑...
 console.log("HTMX 与 Vite 启动成功！");
+
+import "basecoat-css/all";

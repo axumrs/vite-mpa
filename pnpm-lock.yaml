@@ -11,6 +11,9 @@ importers:
       '@tailwindcss/vite':
         specifier: ^4.3.0
         version: 4.3.0(vite@8.0.16(jiti@2.7.0))
+      basecoat-css:
+        specifier: ^0.3.11
+        version: 0.3.11
       htmx.org:
         specifier: ^2.0.10
         version: 2.0.10
@@ -264,6 +267,9 @@ packages:
 
   balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
+
+  basecoat-css@0.3.11:
+    resolution: {integrity: sha512-cU91Egcg9AhKJ1HswpKFItHC//FWDt1T8AlL5Yk9Fh5I2WYe+QhN3MtiVJ2vemqFF4iAM1vfbikhhjc+vkr2zA==}
 
   brace-expansion@2.1.1:
     resolution: {integrity: sha512-WR1cURNjuvBLMZBMbqM0UoE+WAfdUcEV1ccD8PVBVOI+Z3ND4+SZbN8RsfT2bMuG1qwz5RFvPukSZm5fF2D5eA==}
@@ -659,6 +665,8 @@ snapshots:
   async@3.2.6: {}
 
   balanced-match@1.0.2: {}
+
+  basecoat-css@0.3.11: {}
 
   brace-expansion@2.1.1:
     dependencies:
